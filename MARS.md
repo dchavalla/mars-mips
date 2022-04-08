@@ -1,6 +1,6 @@
 # MARS: Installation and Startup
 
-During the next segment of our class, we will be learning more about the MIPS assemble language.  Moreover, you will need to write a number of programs in MIPS assemble.  To help you with these activities, you will need the use of a MIPS assembler, specifically, MARS
+During the next segment of our class, we will be learning more about the MIPS assemble language.  Moreover, you will need to write a number of programs in MIPS assemble.  To help you with these activities, you will need the use of a MIPS assembler, specifically, MARS.
 
 In this assignment, you will download a copy of MARS and perform a number of exercises to familiarize yourself with this simulator.  
 
