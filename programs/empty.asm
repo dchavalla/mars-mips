@@ -1,17 +1,29 @@
 # This example MIPS program performs the traditional "no-op" process.
-# Simple put, it exercises the following operations
-#   1. the startup process for the MIPS environment
-#   2. a call to the main subroutine
-#   3. the shutdown process for the MIPS environment
-
-
-        .data           # insert your data declarations
-
-        .text           # insert your code declarations
-    
-        .globl main     # define your default starting routine
-
-main:   nop             # label for the main program
-        li $v0, 10      # v0 = 10 (terminate == 10)
-        syscall         # trap: terminate
+# Simply put, it exercises the following operations
+#   1. a process is created within the MIPS environment
+#   1. a call is made to the main subroutine
+#   1. the exit syscall is explicitly invoked
+#   1. the process is then shutdown
+#
+# To run the program from the command line
+#   $ mars empty.asm sm
+#
+                .data           
+                # insert your data declarations
+        
+                .text           
+                # insert your code declarations
+        
+                .globl main     
+                # define your default starting routine
+        
+main:           nop             # label for the main subroutine
+        
+                # insert your instructions for main here
+        
+        
+        
+                # terminate your program
+                li $v0, 10      # v0 contains the number for exit, 10
+                syscall         # trap: exit
 

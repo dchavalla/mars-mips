@@ -1,5 +1,5 @@
             .text
-            .include "stack_macros.asm"
+            .include "macros/stacks.s"
             .globl atoi
           
 atoi:       nop               # int atoi(char * str);
