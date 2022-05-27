@@ -25,7 +25,7 @@
                 .globl main
 
 main:           nop 
-                # v0: sum             -- the value to be returned from the program
+ top:               # v0: sum             -- the value to be returned from the program
                 # a0: argc            -- the argument "count", an integer
                 # a1: &argv           -- the arguments "values", an array of ASCII strings
                 

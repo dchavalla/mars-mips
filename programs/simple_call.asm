@@ -1,4 +1,4 @@
-	.include "syscall_macros.asm"
+	.include "macros/syscalls.s"
 	
 	.data
 	.text
@@ -27,7 +27,7 @@ main:   nop   # Main program
 	jal add4   	# call the subroutine
 	move $s0, $v0	# move the return value
 
-	print_int($s0)	# Answers should be 64
-	halt()
+	print_d($s0)	# Answers should be 64
+	exit(0)
 
 
